@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="299941" started-at="2020-08-27T17:21:53 IST" finished-at="2020-08-27T17:26:53 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="299941" started-at="2020-08-27T17:21:53 IST" finished-at="2020-08-27T17:26:53 IST">
+      <class name="com.yoloj.TestCases.TC_Login_Retest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.yoloj.TestCases.TC_Login_Retest@965684]" name="setup" is-config="true" duration-ms="14752" started-at="2020-08-27T17:21:53 IST" finished-at="2020-08-27T17:22:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginTestCase()[pri:0, instance:com.yoloj.TestCases.TC_Login_Retest@965684]" name="loginTestCase" duration-ms="283509" started-at="2020-08-27T17:22:08 IST" finished-at="2020-08-27T17:26:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestCase -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.yoloj.TestCases.TC_Login_Retest@965684]" name="tearDown" is-config="true" duration-ms="1552" started-at="2020-08-27T17:26:52 IST" finished-at="2020-08-27T17:26:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.yoloj.TestCases.TC_Login_Retest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
