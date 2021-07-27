@@ -9,10 +9,10 @@ import com.saucedemo.pageObjects.Saucedemo_HomePage;
 import com.saucedemo.pageObjects.Saucedemo_Login;
 import com.saucedemo.pageObjects.Saucedemo_Overview;
 
-public class TC_PerformanceGlitchUser_RemovingAndAddingInCart extends BaseClass {
+public class TC_ProblemUser_RemovingAndAddingInCart extends BaseClass {
 
-	@Test(description = "Verify whether the PerformanceGlitch user is able add multiple products into cart and remove")
-	public void PerformanceGlitchUser_Removing() throws Exception {
+	@Test(description = "Verify whether the Problem user is able add multiple products into cart and remove")
+	public void Problemuser_Removing() throws Exception {
 		
 		Saucedemo_Login login = new Saucedemo_Login(driver);
 		Saucedemo_HomePage homePage = new Saucedemo_HomePage(driver);
@@ -27,7 +27,7 @@ public class TC_PerformanceGlitchUser_RemovingAndAddingInCart extends BaseClass 
 		
 		login
 		.LaunchUrl(readconfig.getLoginURL())
-		.Enter_UserName(readconfig.performanceGlitchUser())
+		.Enter_UserName(readconfig.problemUser())
 		.Enter_Password(readconfig.getPassword())
 		.Click_Login()
 		.verify_ErrorMsg();

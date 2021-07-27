@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 public class Saucedemo_Cart {
 
@@ -46,13 +47,13 @@ public class Saucedemo_Cart {
 					}
 					else {
 						System.out.println("Not Matching");
-						throw new Exception("Not Matching");
+						Assert.assertTrue(false, "Not Matching");
 					}
 				}
 			}
 			else {
 				System.out.println("Not Matching");
-				throw new Exception("Not Matching");
+				Assert.assertTrue(false, "Not Matching");
 			}
 		}catch(Exception e) {
 			e.getMessage();

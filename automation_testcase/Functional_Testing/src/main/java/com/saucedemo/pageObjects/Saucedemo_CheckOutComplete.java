@@ -2,6 +2,7 @@ package com.saucedemo.pageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 public class Saucedemo_CheckOutComplete {
 	
@@ -19,7 +20,7 @@ public class Saucedemo_CheckOutComplete {
 			System.out.println(driver.findElement(text_success).getText());
 		}
 		else {
-			throw new Exception("Order not placed");
+			Assert.assertTrue(false, "Order is not placed");
 		}
 		return this;
 	}

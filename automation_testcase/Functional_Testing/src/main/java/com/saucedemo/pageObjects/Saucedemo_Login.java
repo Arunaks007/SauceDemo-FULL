@@ -3,6 +3,7 @@ package com.saucedemo.pageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 public class Saucedemo_Login {
 		
@@ -42,7 +43,7 @@ public class Saucedemo_Login {
 		try {
 			if(driver.findElements(btn_login).size() > 0 ) {
 				System.out.println("User is not logged in");
-				throw new Exception("User is not logged in");
+				Assert.assertTrue(false, "User is not logged in");
 			}else {
 				System.out.println("User logged in successfully");
 			}
@@ -58,7 +59,7 @@ public class Saucedemo_Login {
 			if(driver.findElements(text_errorLockedOut).size() > 0 ) {
 				System.out.println("Invalid Credentials");
 				System.out.println("Error Message : " + driver.findElement(text_errorLockedOut).getText());
-				throw new Exception("Invalid Credentials");
+				Assert.assertTrue(false,driver.findElement(text_errorLockedOut).getText());
 			}else {
 				System.out.println("Valid Credentials");
 			}

@@ -68,7 +68,8 @@ public class TC_PerformanceGlitchUser_AddToCartMultiple extends BaseClass {
 		.Enter_FirstName("Tester")
 		.Enter_LastName("full")
 		.Enter_PostalCode("600100")
-		.Click_Continue();
+		.Click_Continue()
+		.verify_ErrorMsg();
 		
 		logger.info("Verifying the Products are the same which user checked out");
 		overiew

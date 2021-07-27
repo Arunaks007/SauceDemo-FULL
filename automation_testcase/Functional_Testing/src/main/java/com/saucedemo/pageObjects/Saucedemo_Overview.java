@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class Saucedemo_Overview {
 
@@ -53,7 +54,7 @@ public class Saucedemo_Overview {
 				System.out.println("Total is correct " +checktotal);
 			}
 			else {
-				throw new Exception("Total is not correct");
+				Assert.assertTrue(false, "Total is not correct "+checktotal);
 			}
 		}catch(Exception e) {
 			e.getMessage();
@@ -74,13 +75,12 @@ public class Saucedemo_Overview {
 					}
 					else {
 						System.out.println("Not Matching");
-						throw new Exception("Not Matching");
 					}
 				}
 			}
 			else {
 				System.out.println("Not Matching");
-				throw new Exception("Not Matching");
+				Assert.assertTrue(false, "Product is not matching in overview");
 			}
 		}catch(Exception e) {
 			e.getMessage();
@@ -117,7 +117,7 @@ public class Saucedemo_Overview {
 					actualprice += map.get(productOveriew.get(i).getText());	
 				}
 				else {
-					throw new Exception("Key is invalid");
+					Assert.assertTrue(false, "Key is invalid");
 				}
 			}
 			
@@ -128,7 +128,7 @@ public class Saucedemo_Overview {
 				System.out.println("Prices are matching");
 			}
 			else {
-				throw new Exception("Prices are not matching");
+				Assert.assertTrue(false, "Prices are not matching");
 			}
 			
 			//Removing $ from the Itemtotal excluding of tax
@@ -139,7 +139,7 @@ public class Saucedemo_Overview {
 				System.out.println("Checkout prices are matching");
 			}
 			else {
-				throw new Exception("Checkout Prices are not matching");
+				Assert.assertTrue(false, "Checkout prices are not matching");
 			}
 			
 			

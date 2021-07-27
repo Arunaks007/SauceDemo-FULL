@@ -1,9 +1,10 @@
 package com.saucedemo.pageObjects;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.openqa.selenium.WebDriver;
 
-public class Saucedemo_CheckOut {
+public class Saucedemo_CheckOut{
 
 	WebDriver driver;
 	
@@ -17,6 +18,9 @@ public class Saucedemo_CheckOut {
 	
 	private By btn_cancel = By.id("cancel");
 	private By btn_continue = By.id("continue");
+	
+	private By text_error = By.xpath("//h3[@data-test = 'error']");
+
 	
 	public Saucedemo_CheckOut Enter_FirstName(String fname) {
 		driver.findElement(text_firstName).sendKeys(fname);
@@ -40,6 +44,21 @@ public class Saucedemo_CheckOut {
 	
 	public Saucedemo_CheckOut Click_Cancel() {
 		driver.findElement(btn_cancel).click();
+		return this;
+	}
+	
+	public Saucedemo_CheckOut verify_ErrorMsg() {
+		try {
+			if(driver.findElement(text_error).isDisplayed()) {
+				System.out.println("Error Message : " + driver.findElement(text_error).getText());
+				Assert.assertTrue(false, "driver.findElement(text_error).getText()");
+			}else {
+				System.out.println("Valid Credentials");
+			}
+		}
+		catch(Exception e) {
+			e.getMessage();
+		}
 		return this;
 	}
 }

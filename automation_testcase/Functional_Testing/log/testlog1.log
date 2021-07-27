@@ -207,3 +207,69 @@
 2021-07-28 00:02:34,822 [main] INFO SauceDemo - clicking checkout
 2021-07-28 00:02:34,974 [main] INFO SauceDemo - Entering firstname, lastname, zipcode to proceed
 2021-07-28 00:02:35,989 [main] INFO SauceDemo - Verifying the Products are the same which user checked out
+2021-07-28 00:16:55,597 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 00:17:29,905 [main] INFO SauceDemo - Selecting a single product
+2021-07-28 00:17:30,211 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 00:17:30,368 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 00:17:30,494 [main] INFO SauceDemo - clicking checkout
+2021-07-28 00:17:30,655 [main] INFO SauceDemo - Entering firstname, lastname, zipcode to proceed
+2021-07-28 00:17:41,737 [main] INFO SauceDemo - Verifying the Products are the same which user checked out
+2021-07-28 00:18:15,128 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 00:18:48,701 [main] INFO SauceDemo - Selecting a single product
+2021-07-28 00:18:49,001 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 00:18:49,231 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 00:18:49,335 [main] INFO SauceDemo - clicking checkout
+2021-07-28 00:18:49,485 [main] INFO SauceDemo - Entering firstname, lastname, zipcode to proceed
+2021-07-28 00:19:00,492 [main] INFO SauceDemo - Verifying the Products are the same which user checked out
+2021-07-28 00:27:32,052 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 00:28:06,664 [main] INFO SauceDemo - Selecting a single product
+2021-07-28 00:28:07,010 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 00:28:07,256 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 00:28:07,338 [main] INFO SauceDemo - clicking checkout
+2021-07-28 00:28:07,521 [main] INFO SauceDemo - Entering firstname, lastname, zipcode to proceed
+2021-07-28 00:28:18,455 [main] INFO SauceDemo - Verifying the Products are the same which user checked out
+2021-07-28 00:31:37,496 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 00:32:11,219 [main] INFO SauceDemo - Selecting a single product
+2021-07-28 00:32:11,525 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 00:32:11,735 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 00:32:11,814 [main] INFO SauceDemo - clicking checkout
+2021-07-28 00:32:11,976 [main] INFO SauceDemo - Entering firstname, lastname, zipcode to proceed
+2021-07-28 00:32:22,972 [main] INFO SauceDemo - Verifying the Products are the same which user checked out
+2021-07-28 00:33:54,302 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 00:34:28,499 [main] INFO SauceDemo - Selecting a single product
+2021-07-28 00:34:28,812 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 00:34:29,021 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 00:34:29,113 [main] INFO SauceDemo - clicking checkout
+2021-07-28 00:34:29,264 [main] INFO SauceDemo - Entering firstname, lastname, zipcode to proceed
+2021-07-28 00:38:20,902 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 00:39:00,095 [main] INFO SauceDemo - Selecting a Multiple product and removing
+2021-07-28 00:39:00,817 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 00:39:01,024 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 00:39:01,139 [main] INFO SauceDemo - clicking checkout
+2021-07-28 00:39:01,345 [main] INFO SauceDemo - Entering firstname, lastname, zipcode to proceed
+2021-07-28 00:39:12,459 [main] INFO SauceDemo - Verifying the Products are the same which user checked out
+2021-07-28 00:45:42,051 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 00:46:15,408 [main] INFO SauceDemo - Selecting a multiple product
+2021-07-28 00:46:16,252 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 00:46:16,505 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 00:46:16,542 [main] INFO SauceDemo - clicking checkout
+2021-07-28 00:46:16,712 [main] INFO SauceDemo - Entering firstname, lastname, zipcode to proceed
+2021-07-28 00:56:57,418 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 00:57:31,638 [main] INFO SauceDemo - Selecting a multiple product
+2021-07-28 00:58:28,178 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 00:59:02,178 [main] INFO SauceDemo - Selecting a Multiple product
+2021-07-28 00:59:02,712 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 00:59:02,923 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 00:59:03,077 [main] INFO SauceDemo - clicking checkout
+2021-07-28 00:59:03,227 [main] INFO SauceDemo - Entering firstname, lastname, zipcode to proceed
+2021-07-28 00:59:14,381 [main] INFO SauceDemo - Verifying the Products are the same which user checked out
+2021-07-28 01:01:53,638 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 01:02:27,184 [main] INFO SauceDemo - Selecting a Multiple product and removing
+2021-07-28 01:02:27,838 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 01:02:28,042 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 01:02:28,155 [main] INFO SauceDemo - clicking checkout
+2021-07-28 01:02:28,312 [main] INFO SauceDemo - Entering firstname, lastname, zipcode to proceed
+2021-07-28 01:03:54,470 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 01:04:28,085 [main] INFO SauceDemo - Selecting a Multiple product and removing
+2021-07-28 01:04:28,728 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 01:04:28,934 [main] INFO SauceDemo - Verify whether the selected products are displaying

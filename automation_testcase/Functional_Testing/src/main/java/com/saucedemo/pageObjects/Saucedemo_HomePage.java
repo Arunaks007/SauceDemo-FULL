@@ -12,6 +12,7 @@ import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class Saucedemo_HomePage {
 
@@ -234,6 +235,7 @@ public class Saucedemo_HomePage {
 		}
 		else {
 			System.out.println("count is not matching");
+			Assert.assertTrue(false, "Cart count is not matching");
 		}
 		return this;
 	}
