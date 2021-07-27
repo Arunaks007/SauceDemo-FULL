@@ -9,10 +9,10 @@ import com.saucedemo.pageObjects.Saucedemo_HomePage;
 import com.saucedemo.pageObjects.Saucedemo_Login;
 import com.saucedemo.pageObjects.Saucedemo_Overview;
 
-public class TC_StandadUser_AddToCartMultiple extends BaseClass {
-	
-	@Test(description = "Verify whether the Standard user is able add multiple products into cart")
-	public void StandardUser_Multiple() throws Exception {
+public class TC_PerformanceGlitchUser_RemovingAndAddingInCart extends BaseClass {
+
+	@Test(description = "Verify whether the PerformanceGlitch user is able add multiple products into cart and remove")
+	public void PerformanceGlitchUser_Removing() throws Exception {
 		
 		Saucedemo_Login login = new Saucedemo_Login(driver);
 		Saucedemo_HomePage homePage = new Saucedemo_HomePage(driver);
@@ -20,7 +20,6 @@ public class TC_StandadUser_AddToCartMultiple extends BaseClass {
 		Saucedemo_CheckOut checkOut =  new Saucedemo_CheckOut(driver);
 		Saucedemo_Overview overiew = new Saucedemo_Overview(driver);
 		Saucedemo_CheckOutComplete complete = new Saucedemo_CheckOutComplete(driver);
-
 		
 		//logging into the application
 		
@@ -28,7 +27,7 @@ public class TC_StandadUser_AddToCartMultiple extends BaseClass {
 		
 		login
 		.LaunchUrl(readconfig.getLoginURL())
-		.Enter_UserName(readconfig.getStandardUsername())
+		.Enter_UserName(readconfig.performanceGlitchUser())
 		.Enter_Password(readconfig.getPassword())
 		.Click_Login()
 		.verify_ErrorMsg();
@@ -40,12 +39,13 @@ public class TC_StandadUser_AddToCartMultiple extends BaseClass {
 		
 		homePage.MapAll_Price();
 		
-		logger.info("Selecting a Multiple product");
+		logger.info("Selecting a Multiple product and removing");
 		//clicking single product and checking the cart.
 		homePage
 		.click_AddToCart_BackPack()
 		.click_AddToCart_BikeLight()
 		.click_AddToCart_FleeJacket()
+		.click_Remove_BikeLight()
 		.verify_cartCount();
 				
 		logger.info("Clicking Cart");
@@ -77,7 +77,6 @@ public class TC_StandadUser_AddToCartMultiple extends BaseClass {
 		complete
 		.Verify_Success()
 		.Click_Home();
-		
 		
 		homePage.click_Logout();
 			

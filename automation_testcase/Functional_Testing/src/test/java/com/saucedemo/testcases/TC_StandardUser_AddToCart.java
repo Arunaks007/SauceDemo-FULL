@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import com.saucedemo.pageObjects.Saucedemo_Cart;
 import com.saucedemo.pageObjects.Saucedemo_CheckOut;
+import com.saucedemo.pageObjects.Saucedemo_CheckOutComplete;
 import com.saucedemo.pageObjects.Saucedemo_HomePage;
 import com.saucedemo.pageObjects.Saucedemo_Login;
 import com.saucedemo.pageObjects.Saucedemo_Overview;
@@ -11,13 +12,15 @@ import com.saucedemo.pageObjects.Saucedemo_Overview;
 public class TC_StandardUser_AddToCart extends BaseClass {
 
 	@Test(description = "Verify whether the Standard user is able add products into cart")
-	public void Login_StandardUser() {
+	public void Login_StandardUser() throws Exception {
 		
 		Saucedemo_Login login = new Saucedemo_Login(driver);
 		Saucedemo_HomePage homePage = new Saucedemo_HomePage(driver);
 		Saucedemo_Cart cart = new Saucedemo_Cart(driver);
 		Saucedemo_CheckOut checkOut =  new Saucedemo_CheckOut(driver);
 		Saucedemo_Overview overiew = new Saucedemo_Overview(driver);
+		Saucedemo_CheckOutComplete complete = new Saucedemo_CheckOutComplete(driver);
+
 		
 		//logging into the application
 		
@@ -68,6 +71,11 @@ public class TC_StandardUser_AddToCart extends BaseClass {
 		.verify_checkOutPricesAreSame(homePage.map)
 		.verify_PriceTotal()
 		.Click_Finish();
+		
+		complete
+		.Verify_Success()
+		.Click_Home();
+		
 		
 		homePage.click_Logout();
 
