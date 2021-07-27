@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="299941" started-at="2020-08-27T17:21:53 IST" finished-at="2020-08-27T17:26:53 IST">
+  <suite started-at="2021-07-27T17:55:26 IST" name="Suite" finished-at="2021-07-27T17:55:59 IST" duration-ms="33034">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="299941" started-at="2020-08-27T17:21:53 IST" finished-at="2020-08-27T17:26:53 IST">
-      <class name="com.yoloj.TestCases.TC_Login_Retest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.yoloj.TestCases.TC_Login_Retest@965684]" name="setup" is-config="true" duration-ms="14752" started-at="2020-08-27T17:21:53 IST" finished-at="2020-08-27T17:22:08 IST">
+    <test started-at="2021-07-27T17:55:26 IST" name="Test" finished-at="2021-07-27T17:55:59 IST" duration-ms="33034">
+      <class name="com.saucedemo.testcases.TC_StandardUser_AddToCart">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.saucedemo.testcases.TC_StandardUser_AddToCart@6dbb137d]" started-at="2021-07-27T17:55:26 IST" name="setup" finished-at="2021-07-27T17:55:32 IST" duration-ms="5453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTestCase()[pri:0, instance:com.yoloj.TestCases.TC_Login_Retest@965684]" name="loginTestCase" duration-ms="283509" started-at="2020-08-27T17:22:08 IST" finished-at="2020-08-27T17:26:52 IST">
+        <test-method signature="Login_StandardUser()[pri:0, instance:com.saucedemo.testcases.TC_StandardUser_AddToCart@6dbb137d]" started-at="2021-07-27T17:55:32 IST" name="Login_StandardUser" description="Verify whether the Standard user is able add products into cart" finished-at="2021-07-27T17:55:57 IST" duration-ms="25182" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTestCase -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.yoloj.TestCases.TC_Login_Retest@965684]" name="tearDown" is-config="true" duration-ms="1552" started-at="2020-08-27T17:26:52 IST" finished-at="2020-08-27T17:26:53 IST">
+        </test-method> <!-- Login_StandardUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.TC_StandardUser_AddToCart@6dbb137d]" started-at="2021-07-27T17:55:57 IST" name="tearDown" finished-at="2021-07-27T17:55:59 IST" duration-ms="1698" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.yoloj.TestCases.TC_Login_Retest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.saucedemo.testcases.TC_StandardUser_AddToCart -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

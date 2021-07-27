@@ -3,13 +3,13 @@
 <suite name="Suite" >
 
 	<listeners>
-		<listener class-name="com.yoloj.utilities.Report_File" />
+		<listener class-name="com.sauce.utilities.Report_File" />
 	</listeners>
 	
   <test name="Test">
     <classes>
       
-      <class name="com.yoloj.TestCases.TC_UserRegister_Retest"/>
+      <class name="com.saucedemo.testcases.TC_StandardUser_AddToCart"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
