@@ -48,6 +48,7 @@ public class Saucedemo_Overview {
 			
 			Float checktotal = itemTotal + tax;
 
+			//validating whether the total is correct or not
 			if(checktotal.equals(total)) {
 				System.out.println("Total is correct " +checktotal);
 			}

@@ -8,10 +8,10 @@ import com.saucedemo.pageObjects.Saucedemo_HomePage;
 import com.saucedemo.pageObjects.Saucedemo_Login;
 import com.saucedemo.pageObjects.Saucedemo_Overview;
 
-public class TC_StandardUser_AddToCart extends BaseClass {
+public class TC_StandardUser_RemovingAndAddingInCart extends BaseClass{
 
-	@Test(description = "Verify whether the Standard user is able add products into cart")
-	public void Login_StandardUser() {
+	@Test(description = "Verify whether the Standard user is able add multiple products into cart")
+	public void StandardUser_Multiple() {
 		
 		Saucedemo_Login login = new Saucedemo_Login(driver);
 		Saucedemo_HomePage homePage = new Saucedemo_HomePage(driver);
@@ -37,10 +37,13 @@ public class TC_StandardUser_AddToCart extends BaseClass {
 		
 		homePage.MapAll_Price();
 		
-		logger.info("Selecting a single product");
+		logger.info("Selecting a Multiple product and removing");
 		//clicking single product and checking the cart.
 		homePage
 		.click_AddToCart_BackPack()
+		.click_AddToCart_BikeLight()
+		.click_AddToCart_FleeJacket()
+		.click_Remove_BikeLight()
 		.verify_cartCount();
 				
 		logger.info("Clicking Cart");
@@ -70,9 +73,6 @@ public class TC_StandardUser_AddToCart extends BaseClass {
 		.Click_Finish();
 		
 		homePage.click_Logout();
-
-		
-		
-		
+			
 	}
 }

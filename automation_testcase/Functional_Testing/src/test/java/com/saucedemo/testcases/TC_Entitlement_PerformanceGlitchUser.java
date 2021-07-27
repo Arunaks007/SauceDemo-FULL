@@ -2,6 +2,7 @@ package com.saucedemo.testcases;
 
 import org.testng.annotations.Test;
 
+import com.saucedemo.pageObjects.Saucedemo_HomePage;
 import com.saucedemo.pageObjects.Saucedemo_Login;
 
 public class TC_Entitlement_PerformanceGlitchUser extends BaseClass{
@@ -10,6 +11,8 @@ public class TC_Entitlement_PerformanceGlitchUser extends BaseClass{
 	public void Login_StandardUser() {
 		
 		Saucedemo_Login login = new Saucedemo_Login(driver);
+		Saucedemo_HomePage homePage = new Saucedemo_HomePage(driver);
+
 		
 		//logging into the application
 		
@@ -22,6 +25,8 @@ public class TC_Entitlement_PerformanceGlitchUser extends BaseClass{
 		
 		login
 		.verify_isUserLoggedIn();
+		
+		homePage.click_Logout();
 	}
 
 }
