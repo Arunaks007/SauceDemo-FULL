@@ -8,6 +8,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -15,7 +17,14 @@ public class Saucedemo_HomePage {
 
 	WebDriver driver;
 	
-	HashMap<String, Float> map = new HashMap<String, Float>();
+	public HashMap<String, Float> map = new HashMap<String, Float>();
+	
+	public ArrayList<String> checkedProducts = new ArrayList<String>();
+	
+	
+	
+	private By btn_logout = By.id("logout_sidebar_link");
+	private By btn_sidebar = By.id("react-burger-menu-btn");
 	
 	//Add to Cart of products
 	private By btn_addToCart_backPack = By.id("add-to-cart-sauce-labs-backpack");
@@ -36,6 +45,9 @@ public class Saucedemo_HomePage {
 	//price of all products
 	private By price = By.xpath("//div[@class='inventory_item_price']");
 	
+	//name of all products
+	private By product_name = By.xpath("//div[@class='inventory_item_name']");
+	
 	//cart button
 	private By btn_cart = By.xpath("//a[@class='shopping_cart_link']");
 	
@@ -46,9 +58,23 @@ public class Saucedemo_HomePage {
 		driver = ldriver;
 	}
 	
+	List<WebElement> prices= new ArrayList<WebElement>();      
+	List<WebElement> names =  new ArrayList<WebElement>();	
+	
 	//Methods
 	
 	public int temp=0;
+	
+	public Saucedemo_HomePage click_Logout() {
+		
+		Actions action = new Actions(driver);
+		Action ac = action.moveToElement(driver.findElement(btn_sidebar)).click().build();
+		
+		ac.perform();
+		
+		driver.findElement(btn_logout).click();
+		return this;
+	}
 	
 	public Saucedemo_HomePage click_Cart() {
 		driver.findElement(btn_cart).click();
@@ -58,77 +84,86 @@ public class Saucedemo_HomePage {
 	public Saucedemo_HomePage click_AddToCart_BackPack() {
 		driver.findElement(btn_addToCart_backPack).click();
 		temp+=1;
+		checkedProducts.add(names.get(0).getText());
 		return this;
 	}
 	
 	public Saucedemo_HomePage click_AddToCart_BikeLight() {
 		driver.findElement(btn_addToCart_bikeLight).click();
 		temp+=1;
+		checkedProducts.add(names.get(1).getText());
 		return this;
 	}
 	
 	public Saucedemo_HomePage click_AddToCart_TShirt() {
 		driver.findElement(btn_addToCart_tShirt).click();
 		temp+=1;
+		checkedProducts.add(names.get(2).getText());
 		return this;
 	}
 	
 	public Saucedemo_HomePage click_AddToCart_FleeJacket() {
 		driver.findElement(btn_addToCart_fleeJacket).click();
 		temp+=1;
+		checkedProducts.add(names.get(3).getText());
 		return this;
 	}
 	
 	public Saucedemo_HomePage click_AddToCart_Onesies() {
 		driver.findElement(btn_addToCart_onesies).click();
 		temp+=1;
+		checkedProducts.add(names.get(4).getText());
 		return this;
 	}
 	
 	public Saucedemo_HomePage click_AddToCart_TShirtRed() {
 		driver.findElement(btn_addToCart_tShirtRed).click();
 		temp+=1;
+		checkedProducts.add(names.get(5).getText());
 		return this;
 	}
 	
 	public Saucedemo_HomePage click_Remove_BackPack() {
 		driver.findElement(btn_remove_backPack).click();
 		temp-=1;
+		checkedProducts.remove(names.get(0).getText());
 		return this;
 	}
 	
 	public Saucedemo_HomePage click_Remove_BikeLight() {
 		driver.findElement(btn_remove_bikeLight).click();
 		temp-=1;
+		checkedProducts.remove(names.get(1).getText());
 		return this;
 	}
 	
 	public Saucedemo_HomePage click_Remove_TShirt() {
 		driver.findElement(btn_remove_tShirt).click();
 		temp-=1;
+		checkedProducts.remove(names.get(2).getText());
 		return this;
 	}
 	
 	public Saucedemo_HomePage click_Remove_FleeJacket() {
 		driver.findElement(btn_remove_fleeJacket).click();
 		temp-=1;
+		checkedProducts.remove(names.get(3).getText());
 		return this;
 	}
 	
 	public Saucedemo_HomePage click_Remove_Onesies() {
 		driver.findElement(btn_remove_onesies).click();
 		temp-=1;
+		checkedProducts.remove(names.get(4).getText());
 		return this;
 	}
 	
 	public Saucedemo_HomePage click_Remove_TShirtRed() {
 		driver.findElement(btn_remove_tShirtRed).click();
 		temp-=1;
+		checkedProducts.remove(names.get(5).getText());
 		return this;
 	}
-	
-	
-	
 	
 	
 	public Saucedemo_HomePage MapAll_Price() {
@@ -140,7 +175,8 @@ public class Saucedemo_HomePage {
 			
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			
-			List<WebElement> prices= driver.findElements(price);
+			names = driver.findElements(product_name);
+			prices = driver.findElements(price);
 			
 			ArrayList<Float> updatedPrice = new ArrayList<Float>();
 			
@@ -148,17 +184,10 @@ public class Saucedemo_HomePage {
 				updatedPrice.add(Float.valueOf(prices.get(i).getText().replaceAll("[$]","") ));
 			}
 			
-			if(prices.size() > 0) {
-				map.put("BackPack", updatedPrice.get(0));
-				map.put("BikeLight", updatedPrice.get(1));
-				map.put("TShirt", updatedPrice.get(2));
-				map.put("FleeceJacket", updatedPrice.get(3));
-				map.put("Onesie", updatedPrice.get(4));
-				map.put("TShirtRed", updatedPrice.get(5));
+			for(int i =0; i<names.size(); i++){
+				map.put(names.get(i).getText(), updatedPrice.get(i));
 			}
-			else {
-				System.out.println("Empty List");
-			}
+			
 			
 		}
 		catch(Exception e) {
@@ -208,4 +237,5 @@ public class Saucedemo_HomePage {
 		}
 		return this;
 	}
+	
 }

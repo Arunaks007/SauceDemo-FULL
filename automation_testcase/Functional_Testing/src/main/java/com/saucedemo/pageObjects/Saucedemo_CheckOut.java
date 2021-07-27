@@ -1,0 +1,45 @@
+package com.saucedemo.pageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class Saucedemo_CheckOut {
+
+	WebDriver driver;
+	
+	public Saucedemo_CheckOut(WebDriver ldriver) {
+		driver = ldriver;
+	}
+	
+	private By text_firstName = By.id("first-name");
+	private By text_lastName = By.id("last-name");
+	private By text_zipCode = By.id("postal-code");
+	
+	private By btn_cancel = By.id("cancel");
+	private By btn_continue = By.id("continue");
+	
+	public Saucedemo_CheckOut Enter_FirstName(String fname) {
+		driver.findElement(text_firstName).sendKeys(fname);
+		return this;
+	}
+
+	public Saucedemo_CheckOut Enter_LastName(String lname) {
+		driver.findElement(text_lastName).sendKeys(lname);
+		return this;
+	}
+	
+	public Saucedemo_CheckOut Enter_PostalCode(String Pcode) {
+		driver.findElement(text_zipCode).sendKeys(Pcode);
+		return this;
+	}
+	
+	public Saucedemo_CheckOut Click_Continue() {
+		driver.findElement(btn_continue).click();
+		return this;
+	}
+	
+	public Saucedemo_CheckOut Click_Cancel() {
+		driver.findElement(btn_cancel).click();
+		return this;
+	}
+}

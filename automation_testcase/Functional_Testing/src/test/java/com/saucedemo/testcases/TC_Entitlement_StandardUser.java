@@ -2,14 +2,16 @@ package com.saucedemo.testcases;
 
 import org.testng.annotations.Test;
 
+import com.saucedemo.pageObjects.Saucedemo_HomePage;
 import com.saucedemo.pageObjects.Saucedemo_Login;
 
 public class TC_Entitlement_StandardUser extends BaseClass {
 
 	@Test(description = "Verify whether the Standard user is able to login successfuly")
-	public void Login_StandardUser() {
+	public void Login_StandardUser() throws Exception {
 		
 		Saucedemo_Login login = new Saucedemo_Login(driver);
+		Saucedemo_HomePage homePage =  new Saucedemo_HomePage(driver);
 		
 		//logging into the application
 		
@@ -22,5 +24,8 @@ public class TC_Entitlement_StandardUser extends BaseClass {
 		
 		login
 		.verify_isUserLoggedIn();
+		
+		homePage.click_Logout();
+		
 	}
 }

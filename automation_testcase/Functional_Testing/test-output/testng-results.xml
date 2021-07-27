@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-27T17:55:26 IST" name="Suite" finished-at="2021-07-27T17:55:59 IST" duration-ms="33034">
+  <suite started-at="2021-07-27T21:57:18 IST" name="Default suite" finished-at="2021-07-27T21:57:53 IST" duration-ms="35128">
     <groups>
     </groups>
-    <test started-at="2021-07-27T17:55:26 IST" name="Test" finished-at="2021-07-27T17:55:59 IST" duration-ms="33034">
+    <test started-at="2021-07-27T21:57:18 IST" name="Default test" finished-at="2021-07-27T21:57:53 IST" duration-ms="35128">
       <class name="com.saucedemo.testcases.TC_StandardUser_AddToCart">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.saucedemo.testcases.TC_StandardUser_AddToCart@6dbb137d]" started-at="2021-07-27T17:55:26 IST" name="setup" finished-at="2021-07-27T17:55:32 IST" duration-ms="5453" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.saucedemo.testcases.TC_StandardUser_AddToCart@54c562f7]" started-at="2021-07-27T21:57:18 IST" name="setup" finished-at="2021-07-27T21:57:23 IST" duration-ms="5615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login_StandardUser()[pri:0, instance:com.saucedemo.testcases.TC_StandardUser_AddToCart@6dbb137d]" started-at="2021-07-27T17:55:32 IST" name="Login_StandardUser" description="Verify whether the Standard user is able add products into cart" finished-at="2021-07-27T17:55:57 IST" duration-ms="25182" status="PASS">
+        <test-method signature="Login_StandardUser()[pri:0, instance:com.saucedemo.testcases.TC_StandardUser_AddToCart@54c562f7]" started-at="2021-07-27T21:57:23 IST" name="Login_StandardUser" description="Verify whether the Standard user is able add products into cart" finished-at="2021-07-27T21:57:51 IST" duration-ms="27771" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_StandardUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.TC_StandardUser_AddToCart@6dbb137d]" started-at="2021-07-27T17:55:57 IST" name="tearDown" finished-at="2021-07-27T17:55:59 IST" duration-ms="1698" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.TC_StandardUser_AddToCart@54c562f7]" started-at="2021-07-27T21:57:51 IST" name="tearDown" finished-at="2021-07-27T21:57:53 IST" duration-ms="1611" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.saucedemo.testcases.TC_StandardUser_AddToCart -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
