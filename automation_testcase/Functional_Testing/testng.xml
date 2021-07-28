@@ -29,6 +29,7 @@
       <class name="com.saucedemo.testcases.TC_StandardUser_Sort"/>
       <class name="com.saucedemo.testcases.TC_ProblemUser_Sort"/>
       <class name="com.saucedemo.testcases.TC_PerformanceGlitchUser_Sort"/>
+      <class name="com.saucedemo.testcases.TC_ProblemUser_ProductImage"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
