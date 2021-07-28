@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -65,6 +67,9 @@ public class Saucedemo_HomePage {
 	//filter button
 	private By dropDown_filter = By.xpath("//select[@class='product_sort_container']");
 	
+	//img
+	private By img_prod = By.xpath("//img[@class='inventory_item_img']");
+	
 	public Saucedemo_HomePage(WebDriver ldriver) {
 		driver = ldriver;
 	}
@@ -75,6 +80,29 @@ public class Saucedemo_HomePage {
 	//Methods
 	
 	public int temp=0;
+	
+	public Saucedemo_HomePage verify_img() throws Exception {
+		List<WebElement> images=driver.findElements(img_prod);
+		ArrayList<String> src = new ArrayList<String>();
+		
+		for(int i=0; i<images.size(); i++) {
+			src.add(images.get(i).getAttribute("src"));
+		}
+		
+		System.out.println(src);
+		
+		Set<String> hash_Set = new HashSet<String>(src);
+		
+		if(hash_Set.size() != 1) {
+			System.out.println("Images are Unique");
+		}
+		else {
+			Assert.assertTrue(false, "All Product Images are same");
+		}
+		
+		
+		return this;
+	}
 	
 	public Saucedemo_HomePage Select_Filter(String filter) {
 		try {
