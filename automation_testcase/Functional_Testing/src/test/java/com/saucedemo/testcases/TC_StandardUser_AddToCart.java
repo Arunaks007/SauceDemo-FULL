@@ -43,6 +43,7 @@ public class TC_StandardUser_AddToCart extends BaseClass {
 		logger.info("Selecting a single product");
 		//clicking single product and checking the cart.
 		homePage
+		.verify_img()
 		.click_AddToCart_BackPack()
 		.verify_cartCount();
 				
