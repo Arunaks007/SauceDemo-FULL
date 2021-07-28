@@ -7,7 +7,7 @@ import com.saucedemo.pageObjects.Saucedemo_Login;
 
 public class TC_PerformanceGlitchUser_Sort extends BaseClass {
 	
-	@Test(description = "Verify whether the Sort is working for PerformanceGlitch user")
+	@Test(description = "Verify whether the Sort is working for PerformanceGlitch user",groups="PerformanceGlitchUser")
 	public void PerformanceGlitchUser_Sort() throws Exception {
 		
 		Saucedemo_Login login = new Saucedemo_Login(driver);

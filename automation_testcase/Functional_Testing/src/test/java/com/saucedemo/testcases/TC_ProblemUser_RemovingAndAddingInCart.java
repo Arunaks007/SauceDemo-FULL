@@ -11,7 +11,7 @@ import com.saucedemo.pageObjects.Saucedemo_Overview;
 
 public class TC_ProblemUser_RemovingAndAddingInCart extends BaseClass {
 
-	@Test(description = "Verify whether the Problem user is able add multiple products into cart and remove")
+	@Test(description = "Verify whether the Problem user is able add multiple products into cart and remove",groups="ProblemUser")
 	public void Problemuser_Removing() throws Exception {
 		
 		Saucedemo_Login login = new Saucedemo_Login(driver);

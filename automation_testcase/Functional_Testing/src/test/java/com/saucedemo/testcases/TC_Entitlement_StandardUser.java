@@ -7,7 +7,7 @@ import com.saucedemo.pageObjects.Saucedemo_Login;
 
 public class TC_Entitlement_StandardUser extends BaseClass {
 
-	@Test(description = "Verify whether the Standard user is able to login successfuly")
+	@Test(description = "Verify whether the Standard user is able to login successfuly",groups="StandardUser")
 	public void Login_StandardUser() throws Exception {
 		
 		Saucedemo_Login login = new Saucedemo_Login(driver);

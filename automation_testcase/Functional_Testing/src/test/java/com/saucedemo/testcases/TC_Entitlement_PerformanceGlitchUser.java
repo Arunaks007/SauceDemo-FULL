@@ -7,8 +7,8 @@ import com.saucedemo.pageObjects.Saucedemo_Login;
 
 public class TC_Entitlement_PerformanceGlitchUser extends BaseClass{
 	
-	@Test(description = "Verify whether the Performance Glitch user is able to login successfuly")
-	public void Login_StandardUser() {
+	@Test(description = "Verify whether the Performance Glitch user is able to login successfuly",groups="PerformanceGlitchUser")
+	public void PerformanceGlitchUser_Login() {
 		
 		Saucedemo_Login login = new Saucedemo_Login(driver);
 		Saucedemo_HomePage homePage = new Saucedemo_HomePage(driver);

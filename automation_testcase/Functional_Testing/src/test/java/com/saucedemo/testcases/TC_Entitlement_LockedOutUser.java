@@ -6,7 +6,7 @@ import com.saucedemo.pageObjects.Saucedemo_Login;
 
 public class TC_Entitlement_LockedOutUser extends BaseClass {
 	
-	@Test(description = "Verify whether the Locked Out user is able not to login")
+	@Test(description = "Verify whether the Locked Out user is able not to login",groups="LockedOutUser")
 	public void Login_LockedOutUser() {
 		
 		Saucedemo_Login login = new Saucedemo_Login(driver);

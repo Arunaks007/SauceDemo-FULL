@@ -46,6 +46,7 @@ public class Saucedemo_Login {
 				Assert.assertTrue(false, "User is not logged in");
 			}else {
 				System.out.println("User logged in successfully");
+			
 			}
 		}
 		catch(Exception e) {

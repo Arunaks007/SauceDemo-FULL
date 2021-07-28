@@ -11,7 +11,7 @@ import com.saucedemo.pageObjects.Saucedemo_Overview;
 
 public class TC_StandardUser_AddToCart extends BaseClass {
 
-	@Test(description = "Verify whether the Standard user is able add products into cart")
+	@Test(description = "Verify whether the Standard user is able add products into cart",groups="StandardUser")
 	public void Login_StandardUser() throws Exception {
 		
 		Saucedemo_Login login = new Saucedemo_Login(driver);

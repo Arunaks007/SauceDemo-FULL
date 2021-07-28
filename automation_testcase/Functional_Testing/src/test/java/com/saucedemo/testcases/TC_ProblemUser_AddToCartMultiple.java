@@ -12,7 +12,7 @@ import com.saucedemo.pageObjects.Saucedemo_Overview;
 public class TC_ProblemUser_AddToCartMultiple extends BaseClass {
 
 	
-	@Test(description = "Verify whether the Problem  is able add multiple products into cart")
+	@Test(description = "Verify whether the Problem  is able add multiple products into cart",groups="ProblemUser")
 	public void ProblemUser_Multiple() throws Exception {
 		
 		Saucedemo_Login login = new Saucedemo_Login(driver);

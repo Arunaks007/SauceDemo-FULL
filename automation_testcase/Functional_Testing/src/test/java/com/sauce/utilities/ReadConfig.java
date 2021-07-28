@@ -69,6 +69,12 @@ Properties pro;
 	return chromepath;
 	}
 	
+	public String getEdgePath()
+	{
+	String edge=pro.getProperty("edgepath");
+	return edge;
+	}
+	
 	public String getIEPath()
 	{
 	String iepath=pro.getProperty("iepath");

@@ -11,7 +11,7 @@ import com.saucedemo.pageObjects.Saucedemo_Overview;
 
 public class TC_NegativeCase_EmptyCart extends BaseClass {
 
-	@Test(description = "Verify whether the user is able proceed order without adding products into cart")
+	@Test(description = "Verify whether the user is able proceed order without adding products into cart",groups="NegativeCases")
 	public void EmptyCart() throws Exception {
 		
 		Saucedemo_Login login = new Saucedemo_Login(driver);

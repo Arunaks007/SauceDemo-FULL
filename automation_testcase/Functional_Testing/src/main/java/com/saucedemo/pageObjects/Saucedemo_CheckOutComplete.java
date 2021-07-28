@@ -27,9 +27,7 @@ public class Saucedemo_CheckOutComplete {
 		catch(Exception e) {
 			e.getMessage();
 		}
-		catch(AssertionError e) {
-			e.getMessage();
-		}
+	
 		return this;
 	}
 	

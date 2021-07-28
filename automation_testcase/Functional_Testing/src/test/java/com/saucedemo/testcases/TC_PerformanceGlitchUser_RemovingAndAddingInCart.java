@@ -11,7 +11,7 @@ import com.saucedemo.pageObjects.Saucedemo_Overview;
 
 public class TC_PerformanceGlitchUser_RemovingAndAddingInCart extends BaseClass {
 
-	@Test(description = "Verify whether the PerformanceGlitch user is able add multiple products into cart and remove")
+	@Test(description = "Verify whether the PerformanceGlitch user is able add multiple products into cart and remove",groups="PerformanceGlitchUser")
 	public void PerformanceGlitchUser_Removing() throws Exception {
 		
 		Saucedemo_Login login = new Saucedemo_Login(driver);

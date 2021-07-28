@@ -63,9 +63,7 @@ public class Saucedemo_CheckOut{
 		catch(Exception e) {
 			e.getMessage();
 		}
-		catch(AssertionError e) {
-			e.getMessage();
-		}
+	
 		return this;
 	}
 	
@@ -80,9 +78,7 @@ public class Saucedemo_CheckOut{
 		catch(Exception e) {
 			e.getMessage();
 		}
-		catch(AssertionError e) {
-			e.getMessage();
-		}
+	
 		return this;
 	}
 }

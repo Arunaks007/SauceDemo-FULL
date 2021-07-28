@@ -11,7 +11,7 @@ import com.saucedemo.pageObjects.Saucedemo_Overview;
 
 public class TC_PerformanceGlitchUser_AddToCart extends BaseClass{
 
-	@Test(description = "Verify whether the Performance Glitch user is able add products into cart")
+	@Test(description = "Verify whether the Performance Glitch user is able add products into cart",groups="PerformanceGlitchUser")
 	public void Login_PerformanceGlitchUser() throws Exception {
 		
 		Saucedemo_Login login = new Saucedemo_Login(driver);

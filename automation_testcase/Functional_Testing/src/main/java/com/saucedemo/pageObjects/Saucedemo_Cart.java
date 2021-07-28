@@ -32,9 +32,6 @@ public class Saucedemo_Cart {
 		catch(Exception e) {
 			e.getMessage();
 		}
-		catch(AssertionError e) {
-			e.getMessage();
-		}
 		return this;
 	}
 	
@@ -69,9 +66,6 @@ public class Saucedemo_Cart {
 				Assert.assertTrue(false, "Not Matching");
 			}
 		}catch(Exception e) {
-			e.getMessage();
-		}
-		catch(AssertionError e) {
 			e.getMessage();
 		}
 		

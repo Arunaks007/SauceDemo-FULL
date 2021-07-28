@@ -5,7 +5,7 @@ import com.saucedemo.pageObjects.Saucedemo_HomePage;
 import com.saucedemo.pageObjects.Saucedemo_Login;
  
 public class TC_StandardUser_Sort extends BaseClass {
-	@Test(description = "Verify whether the Sort is working for Standard user")
+	@Test(description = "Verify whether the Sort is working for Standard user",groups="StandardUser")
 	public void StandardUser_Sort() throws Exception {
 		
 		Saucedemo_Login login = new Saucedemo_Login(driver);
