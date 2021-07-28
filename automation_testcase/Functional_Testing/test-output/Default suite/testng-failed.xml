@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.saucedemo.testcases.TC_ProblemUser_Sort">
+      <class name="com.saucedemo.testcases.TC_Entitlement_LockedOutUser">
         <methods>
-          <include name="ProblemUser_Sort"/>
           <include name="tearDown"/>
+          <include name="Login_LockedOutUser"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.saucedemo.testcases.TC_ProblemUser_Sort -->
+      </class> <!-- com.saucedemo.testcases.TC_Entitlement_LockedOutUser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

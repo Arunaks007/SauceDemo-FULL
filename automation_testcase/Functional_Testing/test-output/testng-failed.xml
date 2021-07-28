@@ -14,48 +14,6 @@
           <include name="setup"/>
         </methods>
       </class> <!-- com.saucedemo.testcases.TC_NegativeCase_CheckOut -->
-      <class name="com.saucedemo.testcases.TC_ProblemUser_AddToCartMultiple">
-        <methods>
-          <include name="tearDown"/>
-          <include name="ProblemUser_Multiple"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.saucedemo.testcases.TC_ProblemUser_AddToCartMultiple -->
-      <class name="com.saucedemo.testcases.TC_PerformanceGlitchUser_AddToCartMultiple">
-        <methods>
-          <include name="PerformaceGlitchUser"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.saucedemo.testcases.TC_PerformanceGlitchUser_AddToCartMultiple -->
-      <class name="com.saucedemo.testcases.TC_ProblemUser_Sort">
-        <methods>
-          <include name="ProblemUser_Sort"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.saucedemo.testcases.TC_ProblemUser_Sort -->
-      <class name="com.saucedemo.testcases.TC_StandardUser_RemovingAndAddingInCart">
-        <methods>
-          <include name="StandardUser_Removing"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.saucedemo.testcases.TC_StandardUser_RemovingAndAddingInCart -->
-      <class name="com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart">
-        <methods>
-          <include name="tearDown"/>
-          <include name="Problemuser_Removing"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart -->
-      <class name="com.saucedemo.testcases.TC_PerformanceGlitchUser_Sort">
-        <methods>
-          <include name="PerformanceGlitchUser_Sort"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.saucedemo.testcases.TC_PerformanceGlitchUser_Sort -->
       <class name="com.saucedemo.testcases.TC_ProblemUser_AddToCart">
         <methods>
           <include name="ProblemUserAddToCart"/>
@@ -63,13 +21,13 @@
           <include name="setup"/>
         </methods>
       </class> <!-- com.saucedemo.testcases.TC_ProblemUser_AddToCart -->
-      <class name="com.saucedemo.testcases.TC_StandardUser_Sort">
+      <class name="com.saucedemo.testcases.TC_ProblemUser_AddToCartMultiple">
         <methods>
           <include name="tearDown"/>
-          <include name="StandardUser_Sort"/>
+          <include name="ProblemUser_Multiple"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.saucedemo.testcases.TC_StandardUser_Sort -->
+      </class> <!-- com.saucedemo.testcases.TC_ProblemUser_AddToCartMultiple -->
       <class name="com.saucedemo.testcases.TC_NegativeCase_EmptyCart">
         <methods>
           <include name="tearDown"/>
@@ -77,27 +35,20 @@
           <include name="setup"/>
         </methods>
       </class> <!-- com.saucedemo.testcases.TC_NegativeCase_EmptyCart -->
-      <class name="com.saucedemo.testcases.TC_NegativeCase_Login">
+      <class name="com.saucedemo.testcases.TC_ProblemUser_Sort">
         <methods>
-          <include name="tearDown"/>
-          <include name="LoginNegativeCase"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.saucedemo.testcases.TC_NegativeCase_Login -->
-      <class name="com.saucedemo.testcases.TC_PerformanceGlitchUser_AddToCart">
-        <methods>
-          <include name="Login_PerformanceGlitchUser"/>
+          <include name="ProblemUser_Sort"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.saucedemo.testcases.TC_PerformanceGlitchUser_AddToCart -->
-      <class name="com.saucedemo.testcases.TC_PerformanceGlitchUser_RemovingAndAddingInCart">
+      </class> <!-- com.saucedemo.testcases.TC_ProblemUser_Sort -->
+      <class name="com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart">
         <methods>
           <include name="tearDown"/>
-          <include name="PerformanceGlitchUser_Removing"/>
+          <include name="Problemuser_Removing"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.saucedemo.testcases.TC_PerformanceGlitchUser_RemovingAndAddingInCart -->
+      </class> <!-- com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
