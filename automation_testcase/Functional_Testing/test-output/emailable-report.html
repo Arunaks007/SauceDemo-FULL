@@ -9,16 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">41,923</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">88,292</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart</td><td><a href="#m0">Problemuser_Removing</a></td><td rowspan="1">1627414434411</td><td rowspan="1">34653</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.saucedemo.testcases.TC_NegativeCase_EmptyCart</td><td><a href="#m0">EmptyCart</a></td><td rowspan="1">1627451791900</td><td rowspan="1">77806</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart#Problemuser_Removing</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Not Matching expected [true] but found [false]
+<h2>Default test</h2><h3 id="m0">com.saucedemo.testcases.TC_NegativeCase_EmptyCart#EmptyCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Cart is Empty expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertTrue(Assert.java:45)
-	at com.saucedemo.pageObjects.Saucedemo_Cart.verify_SelectedProductsAreShowing(Saucedemo_Cart.java:50)
-	at com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart.Problemuser_Removing(TC_ProblemUser_RemovingAndAddingInCart.java:57)
+	at com.saucedemo.pageObjects.Saucedemo_Cart.click_checkOut(Saucedemo_Cart.java:25)
+	at com.saucedemo.testcases.TC_NegativeCase_EmptyCart.EmptyCart(TC_NegativeCase_EmptyCart.java:58)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

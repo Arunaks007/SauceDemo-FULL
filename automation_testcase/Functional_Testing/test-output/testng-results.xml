@@ -2,27 +2,27 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-28T01:03:48 IST" name="Default suite" finished-at="2021-07-28T01:04:30 IST" duration-ms="41923">
+  <suite started-at="2021-07-28T11:26:22 IST" name="Default suite" finished-at="2021-07-28T11:27:51 IST" duration-ms="88292">
     <groups>
     </groups>
-    <test started-at="2021-07-28T01:03:48 IST" name="Default test" finished-at="2021-07-28T01:04:30 IST" duration-ms="41923">
-      <class name="com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart@6d2a209c]" started-at="2021-07-28T01:03:48 IST" name="setup" finished-at="2021-07-28T01:03:54 IST" duration-ms="5723" status="PASS">
+    <test started-at="2021-07-28T11:26:22 IST" name="Default test" finished-at="2021-07-28T11:27:51 IST" duration-ms="88292">
+      <class name="com.saucedemo.testcases.TC_NegativeCase_EmptyCart">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.saucedemo.testcases.TC_NegativeCase_EmptyCart@6d2a209c]" started-at="2021-07-28T11:26:22 IST" name="setup" finished-at="2021-07-28T11:26:31 IST" duration-ms="9035" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Problemuser_Removing()[pri:0, instance:com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart@6d2a209c]" started-at="2021-07-28T01:03:54 IST" name="Problemuser_Removing" description="Verify whether the Problem user is able add multiple products into cart and remove" finished-at="2021-07-28T01:04:29 IST" duration-ms="34653" status="FAIL">
+        <test-method signature="EmptyCart()[pri:0, instance:com.saucedemo.testcases.TC_NegativeCase_EmptyCart@6d2a209c]" started-at="2021-07-28T11:26:31 IST" name="EmptyCart" description="Verify whether the user is able proceed order without adding products into cart" finished-at="2021-07-28T11:27:49 IST" duration-ms="77806" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Not Matching expected [true] but found [false]]]>
+              <![CDATA[Cart is Empty expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Not Matching expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: Cart is Empty expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertTrue(Assert.java:45)
-at com.saucedemo.pageObjects.Saucedemo_Cart.verify_SelectedProductsAreShowing(Saucedemo_Cart.java:50)
-at com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart.Problemuser_Removing(TC_ProblemUser_RemovingAndAddingInCart.java:57)
+at com.saucedemo.pageObjects.Saucedemo_Cart.click_checkOut(Saucedemo_Cart.java:25)
+at com.saucedemo.testcases.TC_NegativeCase_EmptyCart.EmptyCart(TC_NegativeCase_EmptyCart.java:58)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -56,12 +56,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Problemuser_Removing -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart@6d2a209c]" started-at="2021-07-28T01:04:29 IST" name="tearDown" finished-at="2021-07-28T01:04:30 IST" duration-ms="1435" status="PASS">
+        </test-method> <!-- EmptyCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.testcases.TC_NegativeCase_EmptyCart@6d2a209c]" started-at="2021-07-28T11:27:49 IST" name="tearDown" finished-at="2021-07-28T11:27:51 IST" duration-ms="1318" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart -->
+      </class> <!-- com.saucedemo.testcases.TC_NegativeCase_EmptyCart -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -273,3 +273,98 @@
 2021-07-28 01:04:28,085 [main] INFO SauceDemo - Selecting a Multiple product and removing
 2021-07-28 01:04:28,728 [main] INFO SauceDemo - Clicking Cart
 2021-07-28 01:04:28,934 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 09:19:59,751 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 09:20:34,742 [main] INFO SauceDemo - Selecting a single product
+2021-07-28 09:20:35,013 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 09:20:35,365 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 09:20:35,448 [main] INFO SauceDemo - clicking checkout
+2021-07-28 09:20:35,635 [main] INFO SauceDemo - Validating whether the fields throwing error or not
+2021-07-28 09:23:54,284 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 09:24:28,506 [main] INFO SauceDemo - Selecting a single product
+2021-07-28 09:24:28,789 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 09:24:28,991 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 09:24:29,077 [main] INFO SauceDemo - clicking checkout
+2021-07-28 09:24:29,241 [main] INFO SauceDemo - Validating whether the fields throwing error or not
+2021-07-28 09:28:40,951 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 09:29:15,077 [main] INFO SauceDemo - Selecting a single product
+2021-07-28 09:29:15,348 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 09:29:15,545 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 09:29:15,633 [main] INFO SauceDemo - clicking checkout
+2021-07-28 09:29:15,816 [main] INFO SauceDemo - Validating whether the fields throwing error or not
+2021-07-28 09:29:16,758 [main] INFO SauceDemo - Validating whether the fields throwing error or not
+2021-07-28 09:29:17,409 [main] INFO SauceDemo - Validating whether the fields throwing error or not
+2021-07-28 09:34:38,935 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 09:35:15,799 [main] INFO SauceDemo - Selecting a single product
+2021-07-28 09:35:16,252 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 09:35:16,502 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 09:35:16,615 [main] INFO SauceDemo - clicking checkout
+2021-07-28 09:35:16,780 [main] INFO SauceDemo - Validating whether the fields throwing error or not
+2021-07-28 09:35:17,602 [main] INFO SauceDemo - Validating whether the fields throwing error or not
+2021-07-28 09:35:18,232 [main] INFO SauceDemo - Validating whether the fields throwing error or not
+2021-07-28 09:36:35,116 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 09:37:09,290 [main] INFO SauceDemo - Selecting a single product
+2021-07-28 09:37:09,598 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 09:37:09,794 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 09:37:09,884 [main] INFO SauceDemo - clicking checkout
+2021-07-28 09:37:10,042 [main] INFO SauceDemo - Validating whether the fields throwing error or not
+2021-07-28 09:37:11,092 [main] INFO SauceDemo - Validating whether the fields throwing error or not
+2021-07-28 09:37:11,866 [main] INFO SauceDemo - Validating whether the fields throwing error or not
+2021-07-28 09:40:28,164 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 09:41:02,658 [main] INFO SauceDemo - Selecting a single product
+2021-07-28 09:41:02,961 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 09:41:03,184 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 09:41:03,289 [main] INFO SauceDemo - clicking checkout
+2021-07-28 09:41:03,506 [main] INFO SauceDemo - Validating whether the fields throwing error or not-Postal Only
+2021-07-28 09:41:06,585 [main] INFO SauceDemo - Validating whether the fields throwing error or not -FirstName Only
+2021-07-28 09:41:09,453 [main] INFO SauceDemo - Validating whether the fields throwing error or not-lastname Only
+2021-07-28 09:46:16,225 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 09:46:51,182 [main] INFO SauceDemo - Selecting a single product
+2021-07-28 09:46:51,481 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 09:46:51,701 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 09:46:51,790 [main] INFO SauceDemo - clicking checkout
+2021-07-28 09:46:51,946 [main] INFO SauceDemo - Validating whether the fields throwing error or not-Postal Only
+2021-07-28 09:46:55,449 [main] INFO SauceDemo - Validating whether the fields throwing error or not -FirstName Only
+2021-07-28 09:47:00,544 [main] INFO SauceDemo - Validating whether the fields throwing error or not-lastname Only
+2021-07-28 09:49:23,191 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 09:49:58,262 [main] INFO SauceDemo - Selecting a single product
+2021-07-28 09:49:58,533 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 09:49:58,744 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 09:49:58,831 [main] INFO SauceDemo - clicking checkout
+2021-07-28 09:49:58,998 [main] INFO SauceDemo - Validating whether the fields throwing error or not-Postal Only
+2021-07-28 09:50:02,298 [main] INFO SauceDemo - Validating whether the fields throwing error or not -FirstName Only
+2021-07-28 09:50:05,276 [main] INFO SauceDemo - Validating whether the fields throwing error or not-lastname Only
+2021-07-28 09:52:54,380 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 09:53:28,763 [main] INFO SauceDemo - Selecting a single product
+2021-07-28 09:53:29,041 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 09:53:29,243 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 09:53:29,344 [main] INFO SauceDemo - clicking checkout
+2021-07-28 09:53:29,515 [main] INFO SauceDemo - Validating whether the fields throwing error or not-Postal Only
+2021-07-28 09:55:15,927 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 09:55:49,383 [main] INFO SauceDemo - Selecting a single product
+2021-07-28 09:55:49,659 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 09:55:49,867 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 09:55:49,944 [main] INFO SauceDemo - clicking checkout
+2021-07-28 09:55:50,112 [main] INFO SauceDemo - Validating whether the fields throwing error or not-Postal Only
+2021-07-28 09:55:53,875 [main] INFO SauceDemo - Validating whether the fields throwing error or not -FirstName Only
+2021-07-28 09:55:58,556 [main] INFO SauceDemo - Validating whether the fields throwing error or not-lastname Only
+2021-07-28 09:56:02,190 [main] INFO SauceDemo - Validating whether the fields throwing error or not-Fname and Postal Only
+2021-07-28 09:56:06,122 [main] INFO SauceDemo - Validating whether the fields throwing error or not-Lname and Postal Only
+2021-07-28 09:56:09,294 [main] INFO SauceDemo - Validating whether the fields throwing error or not - Empty
+2021-07-28 09:56:12,013 [main] INFO SauceDemo - Validating whether the fields throwing error or not - Numerics
+2021-07-28 09:58:08,682 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 09:58:43,516 [main] INFO SauceDemo - Selecting a single product
+2021-07-28 09:58:43,787 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 09:58:43,995 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 09:58:44,078 [main] INFO SauceDemo - clicking checkout
+2021-07-28 09:58:44,239 [main] INFO SauceDemo - Validating whether the fields throwing error or not-Postal Only
+2021-07-28 09:58:47,997 [main] INFO SauceDemo - Validating whether the fields throwing error or not -FirstName Only
+2021-07-28 09:58:51,545 [main] INFO SauceDemo - Validating whether the fields throwing error or not-lastname Only
+2021-07-28 09:58:54,929 [main] INFO SauceDemo - Validating whether the fields throwing error or not-Fname and Postal Only
+2021-07-28 09:58:58,657 [main] INFO SauceDemo - Validating whether the fields throwing error or not-Lname and Postal Only
+2021-07-28 09:59:01,800 [main] INFO SauceDemo - Validating whether the fields throwing error or not - Empty
+2021-07-28 09:59:04,564 [main] INFO SauceDemo - Validating whether the fields throwing error or not - Numerics
+2021-07-28 11:26:32,077 [main] INFO SauceDemo - Launching the Browser
+2021-07-28 11:27:09,079 [main] INFO SauceDemo - Selecting a single product
+2021-07-28 11:27:19,288 [main] INFO SauceDemo - Clicking Cart
+2021-07-28 11:27:19,545 [main] INFO SauceDemo - Verify whether the selected products are displaying
+2021-07-28 11:27:39,622 [main] INFO SauceDemo - clicking checkout

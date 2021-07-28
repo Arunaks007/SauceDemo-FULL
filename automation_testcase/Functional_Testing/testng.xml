@@ -8,8 +8,22 @@
 	
   <test name="Test">
     <classes>
-      
+      <class name="com.saucedemo.testcases.TC_Entitlement_StandardUser"/>
+      <class name="com.saucedemo.testcases.TC_Entitlement_LockedOutUser"/>
+      <class name="com.saucedemo.testcases.TC_Entitlement_PerformanceGlitchUser"/>
+      <class name="com.saucedemo.testcases.TC_Entitlement_ProblemUser"/>
       <class name="com.saucedemo.testcases.TC_StandardUser_AddToCart"/>
+      <class name="com.saucedemo.testcases.TC_StandadUser_AddToCartMultiple"/>
+      <class name="com.saucedemo.testcases.TC_StandardUser_RemovingAndAddingInCart"/>
+      <class name="com.saucedemo.testcases.TC_ProblemUser_AddToCart"/>
+      <class name="com.saucedemo.testcases.TC_ProblemUser_AddToCartMultiple"/>
+      <class name="com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart"/>
+      <class name="com.saucedemo.testcases.TC_PerformanceGlitchUser_AddToCart"/>
+      <class name="com.saucedemo.testcases.TC_PerformanceGlitchUser_AddToCartMultiple"/>
+      <class name="com.saucedemo.testcases.TC_PerformanceGlitchUser_RemovingAndAddingInCart"/>
+      <class name="com.saucedemo.testcases.TC_NegativeCase_Login"/>
+      <class name="com.saucedemo.testcases.TC_NegativeCase_CheckOut"/>
+      <class name="com.saucedemo.testcases.TC_NegativeCase_EmptyCart"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

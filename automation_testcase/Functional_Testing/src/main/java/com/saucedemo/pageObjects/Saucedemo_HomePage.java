@@ -220,10 +220,10 @@ public class Saucedemo_HomePage {
 		int count = 0;
 		
 		try {
-		count = Integer.valueOf(driver.findElement(btn_cart_count).getText());
+			count = Integer.valueOf(driver.findElement(btn_cart_count).getText());
 		}
 		catch(Exception e){
-			System.out.println("Cart was empty");
+			System.out.println("Cart is empty");
 		}
 		return count;
 	}

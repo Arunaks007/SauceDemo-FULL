@@ -21,7 +21,12 @@ public class Saucedemo_Cart {
 	private By btn_continueShopping = By.id("continue-shopping");
 		
 	public Saucedemo_Cart click_checkOut() {
-		driver.findElement(btn_checkOut).click();
+		if(Get_ProductsCount() == 0) {
+			Assert.assertTrue(false, "Cart is Empty");
+		}
+		else {
+			driver.findElement(btn_checkOut).click();
+		}
 		return this;
 	}
 	

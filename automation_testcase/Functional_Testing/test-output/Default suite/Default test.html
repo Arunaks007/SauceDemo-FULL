@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 28 01:03:48 IST 2021</td>
+<td>Started on:</td><td>Wed Jul 28 11:26:22 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>41 seconds (41923 ms)</td>
+<tr><td>Total time:</td><td>88 seconds (88292 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,13 +75,13 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart.Problemuser_Removing()'><b>Problemuser_Removing</b><br>Test class: com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart<br>Test method: Verify whether the Problem user is able add multiple products into cart and remove</td>
-<td><div><pre>java.lang.AssertionError: Not Matching expected [true] but found [false]
+<td title='com.saucedemo.testcases.TC_NegativeCase_EmptyCart.EmptyCart()'><b>EmptyCart</b><br>Test class: com.saucedemo.testcases.TC_NegativeCase_EmptyCart<br>Test method: Verify whether the user is able proceed order without adding products into cart</td>
+<td><div><pre>java.lang.AssertionError: Cart is Empty expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertTrue(Assert.java:45)
-	at com.saucedemo.pageObjects.Saucedemo_Cart.verify_SelectedProductsAreShowing(Saucedemo_Cart.java:50)
-	at com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart.Problemuser_Removing(TC_ProblemUser_RemovingAndAddingInCart.java:57)
+	at com.saucedemo.pageObjects.Saucedemo_Cart.click_checkOut(Saucedemo_Cart.java:25)
+	at com.saucedemo.testcases.TC_NegativeCase_EmptyCart.EmptyCart(TC_NegativeCase_EmptyCart.java:58)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -110,13 +110,13 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace827035437", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace827035437'><pre>java.lang.AssertionError: Not Matching expected [true] but found [false]
+</pre></div><a href='#' onClick='toggleBox("stack-trace665137804", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace665137804'><pre>java.lang.AssertionError: Cart is Empty expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertTrue(Assert.java:45)
-	at com.saucedemo.pageObjects.Saucedemo_Cart.verify_SelectedProductsAreShowing(Saucedemo_Cart.java:50)
-	at com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart.Problemuser_Removing(TC_ProblemUser_RemovingAndAddingInCart.java:57)
+	at com.saucedemo.pageObjects.Saucedemo_Cart.click_checkOut(Saucedemo_Cart.java:25)
+	at com.saucedemo.testcases.TC_NegativeCase_EmptyCart.EmptyCart(TC_NegativeCase_EmptyCart.java:58)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -146,8 +146,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>34</td>
-<td>com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart@6d2a209c</td></tr>
+<td>77</td>
+<td>com.saucedemo.testcases.TC_NegativeCase_EmptyCart@6d2a209c</td></tr>
 </table><p>
 </body>
 </html>
