@@ -17,10 +17,9 @@ public class TC_Entitlement_LockedOutUser extends BaseClass {
 		.LaunchUrl(readconfig.getLoginURL())
 		.Enter_UserName(readconfig.lockedOutUser())
 		.Enter_Password(readconfig.getPassword())
-		.Click_Login()
-		.verify_ErrorMsg();
+		.Click_Login();
 		
 		login
-		.verify_isUserLoggedIn();
+		.verify_UserIsNotLoggedIn();
 	}
 }

@@ -12,7 +12,7 @@ import com.saucedemo.pageObjects.Saucedemo_Overview;
 public class TC_ProblemUser_AddToCart extends BaseClass {
 
 	@Test(description = "Verify whether the Problem user is able add products into cart")
-	public void Login_ProblemUser() throws Exception {
+	public void ProblemUserAddToCart() throws Exception {
 		
 		Saucedemo_Login login = new Saucedemo_Login(driver);
 		Saucedemo_HomePage homePage = new Saucedemo_HomePage(driver);

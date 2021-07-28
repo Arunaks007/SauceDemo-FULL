@@ -57,11 +57,24 @@ public class Saucedemo_Login {
 	public Saucedemo_Login verify_ErrorMsg() {
 		try {
 			if(driver.findElements(text_errorLockedOut).size() > 0 ) {
-				System.out.println("Invalid Credentials");
 				System.out.println("Error Message : " + driver.findElement(text_errorLockedOut).getText());
 				Assert.assertTrue(false,driver.findElement(text_errorLockedOut).getText());
 			}else {
 				System.out.println("Valid Credentials");
+			}
+		}
+		catch(Exception e) {
+			e.getMessage();
+		}
+		return this;
+	}
+	
+	public Saucedemo_Login verify_UserIsNotLoggedIn() {
+		try {
+			if(driver.findElements(text_errorLockedOut).size() > 0 && driver.findElements(btn_login).size() > 0 ) {
+				System.out.println("Error Message : " + driver.findElement(text_errorLockedOut).getText());
+			}else {
+				Assert.assertTrue(false,driver.findElement(text_errorLockedOut).getText());
 			}
 		}
 		catch(Exception e) {

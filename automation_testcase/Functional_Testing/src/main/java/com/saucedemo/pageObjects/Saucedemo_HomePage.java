@@ -229,13 +229,20 @@ public class Saucedemo_HomePage {
 	}
 	
 	public Saucedemo_HomePage verify_cartCount() {
-		
-		if(Get_CartCount() == temp) {
-			System.out.println("count is matching");
+		try {
+			if(Get_CartCount() == temp) {
+				System.out.println("count is matching");
+			}
+			else {
+				System.out.println("count is not matching");
+				Assert.assertTrue(false, "Cart count is not matching");
+			}
 		}
-		else {
-			System.out.println("count is not matching");
-			Assert.assertTrue(false, "Cart count is not matching");
+		catch(Exception e) {
+			e.getMessage();
+		}
+		catch(AssertionError e) {
+			e.getMessage();
 		}
 		return this;
 	}

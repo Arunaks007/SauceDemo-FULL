@@ -13,7 +13,7 @@ public class TC_NegativeCase_CheckOut extends BaseClass{
 
 	
 	@Test(description = "Verify whether the checkout page is accepting invalid/empty values.")
-	public void StandardUser_CheckOut_NC() throws Exception {
+	public void StandardUser_CheckOut_NegativeCases() throws Exception {
 		
 		Saucedemo_Login login = new Saucedemo_Login(driver);
 		Saucedemo_HomePage homePage = new Saucedemo_HomePage(driver);

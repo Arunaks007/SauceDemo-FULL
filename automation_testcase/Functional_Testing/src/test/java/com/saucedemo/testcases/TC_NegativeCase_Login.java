@@ -7,7 +7,7 @@ import com.saucedemo.pageObjects.Saucedemo_Login;
 public class TC_NegativeCase_Login extends BaseClass {
 
 	@Test(description = "Verify whether the Fields accepting invalid values")
-	public void Login_StandardUser() {
+	public void LoginNegativeCase() {
 		
 		Saucedemo_Login login = new Saucedemo_Login(driver);
 		

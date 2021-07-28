@@ -55,12 +55,15 @@ public class Saucedemo_CheckOut{
 		try {
 			if(driver.findElement(text_error).isDisplayed()) {
 				System.out.println("Error Message : " + driver.findElement(text_error).getText());
-				Assert.assertTrue(false, "driver.findElement(text_error).getText()");
+				Assert.assertTrue(false, driver.findElement(text_error).getText());
 			}else {
 				System.out.println("Valid Credentials");
 			}
 		}
 		catch(Exception e) {
+			e.getMessage();
+		}
+		catch(AssertionError e) {
 			e.getMessage();
 		}
 		return this;
@@ -75,6 +78,9 @@ public class Saucedemo_CheckOut{
 			}
 		}
 		catch(Exception e) {
+			e.getMessage();
+		}
+		catch(AssertionError e) {
 			e.getMessage();
 		}
 		return this;

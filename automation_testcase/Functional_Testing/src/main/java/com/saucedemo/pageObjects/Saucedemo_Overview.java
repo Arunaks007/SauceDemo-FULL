@@ -48,14 +48,20 @@ public class Saucedemo_Overview {
 			
 			
 			Float checktotal = itemTotal + tax;
-
+			double check = Math.round(checktotal * 100.0) / 100.0;
+			
+			double finalValue = Math.round(total * 100.0) / 100.0;
+			
+			
 			//validating whether the total is correct or not
-			if(checktotal.equals(total)) {
-				System.out.println("Total is correct " +checktotal);
+			if(check == finalValue) {
+				System.out.println("Total is correct " +finalValue);
 			}
 			else {
-				Assert.assertTrue(false, "Total is not correct "+checktotal);
+				Assert.assertTrue(false, "Total is not correct "+finalValue);
 			}
+			
+			
 		}catch(Exception e) {
 			e.getMessage();
 		}

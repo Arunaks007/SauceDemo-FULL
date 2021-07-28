@@ -8,45 +8,50 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">88,292</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num attn">6</td><td class="num">764,599</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.saucedemo.testcases.TC_NegativeCase_EmptyCart</td><td><a href="#m0">EmptyCart</a></td><td rowspan="1">1627451791900</td><td rowspan="1">77806</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.saucedemo.testcases.TC_NegativeCase_CheckOut</td><td><a href="#m0">StandardUser_CheckOut_NC</a></td><td rowspan="1">1627459665684</td><td rowspan="1">64678</td></tr><tr class="failedodd"><td rowspan="1">com.saucedemo.testcases.TC_NegativeCase_EmptyCart</td><td><a href="#m1">EmptyCart</a></td><td rowspan="1">1627459734902</td><td rowspan="1">73272</td></tr><tr class="failedeven"><td rowspan="1">com.saucedemo.testcases.TC_NegativeCase_Login</td><td><a href="#m2">Login_StandardUser</a></td><td rowspan="1">1627459658561</td><td rowspan="1">2602</td></tr><tr class="failedodd"><td rowspan="1">com.saucedemo.testcases.TC_ProblemUser_AddToCart</td><td><a href="#m3">Login_ProblemUser</a></td><td rowspan="1">1627459346477</td><td rowspan="1">37489</td></tr><tr class="failedeven"><td rowspan="1">com.saucedemo.testcases.TC_ProblemUser_AddToCartMultiple</td><td><a href="#m4">ProblemUser</a></td><td rowspan="1">1627459388173</td><td rowspan="1">33999</td></tr><tr class="failedodd"><td rowspan="1">com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart</td><td><a href="#m5">Problemuser_Removing</a></td><td rowspan="1">1627459426667</td><td rowspan="1">34000</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.saucedemo.testcases.TC_Entitlement_LockedOutUser</td><td><a href="#m6">Login_LockedOutUser</a></td><td rowspan="1">1627459089087</td><td rowspan="1">3415</td></tr><tr class="passedodd"><td rowspan="1">com.saucedemo.testcases.TC_Entitlement_PerformanceGlitchUser</td><td><a href="#m7">Login_StandardUser</a></td><td rowspan="1">1627459097134</td><td rowspan="1">41505</td></tr><tr class="passedeven"><td rowspan="1">com.saucedemo.testcases.TC_Entitlement_ProblemUser</td><td><a href="#m8">Login_StandardUser</a></td><td rowspan="1">1627459142740</td><td rowspan="1">34097</td></tr><tr class="passedodd"><td rowspan="1">com.saucedemo.testcases.TC_Entitlement_StandardUser</td><td><a href="#m9">Login_StandardUser</a></td><td rowspan="1">1627459050734</td><td rowspan="1">34013</td></tr><tr class="passedeven"><td rowspan="1">com.saucedemo.testcases.TC_PerformanceGlitchUser_AddToCart</td><td><a href="#m10">Login_PerformanceGlitchUser</a></td><td rowspan="1">1627459465504</td><td rowspan="1">58776</td></tr><tr class="passedodd"><td rowspan="1">com.saucedemo.testcases.TC_PerformanceGlitchUser_AddToCartMultiple</td><td><a href="#m11">PerformaceGlitchUser</a></td><td rowspan="1">1627459529716</td><td rowspan="1">59132</td></tr><tr class="passedeven"><td rowspan="1">com.saucedemo.testcases.TC_PerformanceGlitchUser_RemovingAndAddingInCart</td><td><a href="#m12">PerformanceGlitchUser_Removing</a></td><td rowspan="1">1627459593124</td><td rowspan="1">60590</td></tr><tr class="passedodd"><td rowspan="1">com.saucedemo.testcases.TC_StandadUser_AddToCartMultiple</td><td><a href="#m13">StandardUser_Multiple</a></td><td rowspan="1">1627459236880</td><td rowspan="1">50058</td></tr><tr class="passedeven"><td rowspan="1">com.saucedemo.testcases.TC_StandardUser_AddToCart</td><td><a href="#m14">Login_StandardUser</a></td><td rowspan="1">1627459182167</td><td rowspan="1">48599</td></tr><tr class="passedodd"><td rowspan="1">com.saucedemo.testcases.TC_StandardUser_RemovingAndAddingInCart</td><td><a href="#m15">StandardUser_Removing</a></td><td rowspan="1">1627459292686</td><td rowspan="1">49327</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.saucedemo.testcases.TC_NegativeCase_EmptyCart#EmptyCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Cart is Empty expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
+<h2>Test</h2><h3 id="m0">com.saucedemo.testcases.TC_NegativeCase_CheckOut#StandardUser_CheckOut_NC</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Error Message is not Showing expected [true] but found [false]
+	at com.saucedemo.pageObjects.Saucedemo_CheckOut.verify_CheckOutErrorMsg(Saucedemo_CheckOut.java:74)
+	at com.saucedemo.testcases.TC_NegativeCase_CheckOut.StandardUser_CheckOut_NC(TC_NegativeCase_CheckOut.java:127)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.saucedemo.testcases.TC_NegativeCase_EmptyCart#EmptyCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Cart is Empty expected [true] but found [false]
 	at com.saucedemo.pageObjects.Saucedemo_Cart.click_checkOut(Saucedemo_Cart.java:25)
 	at com.saucedemo.testcases.TC_NegativeCase_EmptyCart.EmptyCart(TC_NegativeCase_EmptyCart.java:58)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.saucedemo.testcases.TC_NegativeCase_Login#Login_StandardUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Epic sadface: Username and password do not match any user in this service expected [true] but found [false]
+	at com.saucedemo.pageObjects.Saucedemo_Login.verify_ErrorMsg(Saucedemo_Login.java:61)
+	at com.saucedemo.testcases.TC_NegativeCase_Login.Login_StandardUser(TC_NegativeCase_Login.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.saucedemo.testcases.TC_ProblemUser_AddToCart#Login_ProblemUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: driver.findElement(text_error).getText() expected [true] but found [false]
+	at com.saucedemo.pageObjects.Saucedemo_CheckOut.verify_ErrorMsg(Saucedemo_CheckOut.java:58)
+	at com.saucedemo.testcases.TC_ProblemUser_AddToCart.Login_ProblemUser(TC_ProblemUser_AddToCart.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.saucedemo.testcases.TC_ProblemUser_AddToCartMultiple#ProblemUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Cart count is not matching expected [true] but found [false]
+	at com.saucedemo.pageObjects.Saucedemo_HomePage.verify_cartCount(Saucedemo_HomePage.java:238)
+	at com.saucedemo.testcases.TC_ProblemUser_AddToCartMultiple.ProblemUser(TC_ProblemUser_AddToCartMultiple.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart#Problemuser_Removing</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Not Matching expected [true] but found [false]
+	at com.saucedemo.pageObjects.Saucedemo_Cart.verify_SelectedProductsAreShowing(Saucedemo_Cart.java:55)
+	at com.saucedemo.testcases.TC_ProblemUser_RemovingAndAddingInCart.Problemuser_Removing(TC_ProblemUser_RemovingAndAddingInCart.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.saucedemo.testcases.TC_Entitlement_LockedOutUser#Login_LockedOutUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.saucedemo.testcases.TC_Entitlement_PerformanceGlitchUser#Login_StandardUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.saucedemo.testcases.TC_Entitlement_ProblemUser#Login_StandardUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.saucedemo.testcases.TC_Entitlement_StandardUser#Login_StandardUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.saucedemo.testcases.TC_PerformanceGlitchUser_AddToCart#Login_PerformanceGlitchUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.saucedemo.testcases.TC_PerformanceGlitchUser_AddToCartMultiple#PerformaceGlitchUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.saucedemo.testcases.TC_PerformanceGlitchUser_RemovingAndAddingInCart#PerformanceGlitchUser_Removing</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.saucedemo.testcases.TC_StandadUser_AddToCartMultiple#StandardUser_Multiple</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.saucedemo.testcases.TC_StandardUser_AddToCart#Login_StandardUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.saucedemo.testcases.TC_StandardUser_RemovingAndAddingInCart#StandardUser_Removing</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

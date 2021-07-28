@@ -21,11 +21,19 @@ public class Saucedemo_Cart {
 	private By btn_continueShopping = By.id("continue-shopping");
 		
 	public Saucedemo_Cart click_checkOut() {
-		if(Get_ProductsCount() == 0) {
-			Assert.assertTrue(false, "Cart is Empty");
+		try {
+			if(Get_ProductsCount() == 0) {
+				Assert.assertTrue(false, "Cart is Empty");
+			}
+			else {
+				driver.findElement(btn_checkOut).click();
+			}
 		}
-		else {
-			driver.findElement(btn_checkOut).click();
+		catch(Exception e) {
+			e.getMessage();
+		}
+		catch(AssertionError e) {
+			e.getMessage();
 		}
 		return this;
 	}
@@ -61,6 +69,9 @@ public class Saucedemo_Cart {
 				Assert.assertTrue(false, "Not Matching");
 			}
 		}catch(Exception e) {
+			e.getMessage();
+		}
+		catch(AssertionError e) {
 			e.getMessage();
 		}
 		
