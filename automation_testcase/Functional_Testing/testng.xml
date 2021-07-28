@@ -24,6 +24,9 @@
       <class name="com.saucedemo.testcases.TC_NegativeCase_Login"/>
       <class name="com.saucedemo.testcases.TC_NegativeCase_CheckOut"/>
       <class name="com.saucedemo.testcases.TC_NegativeCase_EmptyCart"/>
+      <class name="com.saucedemo.testcases.TC_StandardUser_Sort"/>
+      <class name="com.saucedemo.testcases.TC_ProblemUser_Sort"/>
+      <class name="com.saucedemo.testcases.TC_PerformanceGlitchUser_Sort"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

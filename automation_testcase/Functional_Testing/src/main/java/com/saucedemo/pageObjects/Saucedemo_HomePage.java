@@ -1,6 +1,8 @@
 package com.saucedemo.pageObjects;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -11,6 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -19,9 +22,13 @@ public class Saucedemo_HomePage {
 	WebDriver driver;
 	
 	public HashMap<String, Float> map = new HashMap<String, Float>();
-	
 	public ArrayList<String> checkedProducts = new ArrayList<String>();
+	ArrayList<Float> updatedPrice = new ArrayList<Float>();
+	ArrayList<String> productNames = new ArrayList<String>();
 	
+	//sort
+	ArrayList<Float> afterSortPrice = new ArrayList<Float>();
+	ArrayList<String> afterSortName = new ArrayList<String>();
 	
 	
 	private By btn_logout = By.id("logout_sidebar_link");
@@ -55,6 +62,9 @@ public class Saucedemo_HomePage {
 	//cart count
 	private By btn_cart_count = By.xpath("//a[@class='shopping_cart_link']/span");
 	
+	//filter button
+	private By dropDown_filter = By.xpath("//select[@class='product_sort_container']");
+	
 	public Saucedemo_HomePage(WebDriver ldriver) {
 		driver = ldriver;
 	}
@@ -65,6 +75,164 @@ public class Saucedemo_HomePage {
 	//Methods
 	
 	public int temp=0;
+	
+	public Saucedemo_HomePage Select_Filter(String filter) {
+		try {
+			if(filter.length() != 0) {
+				ArrayList<Float> sortedLowToHigh = new ArrayList<Float>(updatedPrice);
+				
+				//sorting all the prices from low to high before selecting
+				Collections.sort(sortedLowToHigh);
+				
+				//sorting all the names from ascending to descending before selecting
+				Collections.sort(productNames);
+
+				Select value = new Select(driver.findElement(dropDown_filter));
+				
+				if(filter.equalsIgnoreCase("az")) {
+					System.out.println(productNames);
+					
+					//selecting the option
+					value.selectByValue(filter);
+					Thread.sleep(1200);
+					
+					//After sort mapping all the price once
+					sortNames();
+					
+					System.out.println(afterSortName);
+					
+					//Using for loop checking whether both list is same or not
+					for(int i=0; i<afterSortName.size();i++) {
+						if(afterSortName.get(i).equals(productNames.get(i))) {
+							System.out.println("Equals");
+						}
+						else {
+							System.out.println("Not Equals");
+							Assert.assertTrue(false, "Sort is not working for low to high");
+						}
+					}
+					
+					
+					
+				}
+				else if(filter.equalsIgnoreCase("za")) {
+					
+					Collections.reverse(productNames);
+					System.out.println(productNames);
+					
+					//selecting the option
+					value.selectByValue(filter);
+					Thread.sleep(1200);
+					
+					//After sort mapping all the price once
+					sortNames();
+					
+					System.out.println(afterSortName);
+					
+					//Using for loop checking whether both list is same or not
+					for(int i=0; i<afterSortName.size();i++) {
+						if(afterSortName.get(i).equals(productNames.get(i))) {
+							System.out.println("Equals");
+						}
+						else {
+							System.out.println("Not Equals");
+							Assert.assertTrue(false, "Sort is not working for low to high");
+						}
+					}
+					
+					
+				}
+				else if(filter.equalsIgnoreCase("lohi")) {
+					
+					System.out.println(sortedLowToHigh);
+					//selecting the option
+					value.selectByValue(filter);
+					Thread.sleep(1200);
+					
+					//After sort mapping all the price once
+					sortPrices();
+					
+					System.out.println(afterSortPrice);
+					
+					//Using for loop checking whether both list is same or not
+					for(int i=0; i<afterSortPrice.size();i++) {
+						if(afterSortPrice.get(i).equals(sortedLowToHigh.get(i))) {
+							System.out.println("Equals");
+						}
+						else {
+							System.out.println("Not Equals");
+							Assert.assertTrue(false, "Sort is not working for low to high");
+						}
+					}
+					
+				}
+				else if(filter.equalsIgnoreCase("hilo")) {
+					//sorting all the prices from low to high before selecting low to high option
+					Collections.reverse(sortedLowToHigh);
+					
+					System.out.println(sortedLowToHigh);
+					//selecting the option
+					value.selectByValue(filter);
+					Thread.sleep(1200);
+					
+					//After sort mapping all the price once
+					sortPrices();
+					
+					System.out.println(afterSortPrice);
+					
+					//Using for loop checking whether both list is same or not
+					for(int i=0; i<afterSortPrice.size();i++) {
+						if(afterSortPrice.get(i).equals(sortedLowToHigh.get(i))) {
+							System.out.println("Equals");
+						}
+						else {
+							System.out.println("Not Equals");
+							Assert.assertTrue(false, "Sort is not working for low to high");
+						}
+					}
+					
+				}
+				else {
+					Assert.assertTrue(false, "Filter is invalid");
+				}
+			}
+			else {
+				Assert.assertTrue(false, "Filter is empty");
+				}
+		}catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+
+		return this;
+	}
+	
+	public void sortPrices() {
+		prices = driver.findElements(price);
+		
+		afterSortPrice.clear();
+		
+		for(int i = 0; i<prices.size();i++) {
+			afterSortPrice.add(Float.valueOf(prices.get(i).getText().replaceAll("[$]","") ));
+		}
+	}
+	
+	public void sortNames() {
+		names = driver.findElements(product_name);
+		
+		afterSortName.clear();
+		
+		for(int i=0; i<names.size(); i++) {
+			afterSortName.add(names.get(i).getText());
+		}
+	}
+	
+	public void AddProductNamesIntoList() {
+		names = driver.findElements(product_name);
+		
+		for(int i=0; i<names.size(); i++) {
+			productNames.add(names.get(i).getText());
+		}
+	}
 	
 	public Saucedemo_HomePage click_Logout() {
 		
@@ -179,7 +347,7 @@ public class Saucedemo_HomePage {
 			names = driver.findElements(product_name);
 			prices = driver.findElements(price);
 			
-			ArrayList<Float> updatedPrice = new ArrayList<Float>();
+			AddProductNamesIntoList();
 			
 			for(int i = 0; i<prices.size();i++) {
 				updatedPrice.add(Float.valueOf(prices.get(i).getText().replaceAll("[$]","") ));
@@ -239,9 +407,6 @@ public class Saucedemo_HomePage {
 			}
 		}
 		catch(Exception e) {
-			e.getMessage();
-		}
-		catch(AssertionError e) {
 			e.getMessage();
 		}
 		return this;
